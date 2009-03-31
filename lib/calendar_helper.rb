@@ -97,7 +97,7 @@ module CalendarHelper
     end
 
     # TODO Use some kind of builder instead of straight HTML
-    cal = %(<table class="#{options[:table_class]}" border="0" cellspacing="0" cellpadding="0">)
+    cal = %(<table class="#{options[:table_class]}" border="1">)
     cal << %(<thead><tr>)
     if options[:previous_month_text] or options[:next_month_text]
       cal << %(<th colspan="2">#{options[:previous_month_text]}</th>)
